@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE html tells browser this is using HTML5 -->
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Ethan Reeves
+Submitted: 8/30/24
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection :  I really enjoyed writing this program,  i am currenly taking two other similar classes.
+ Making a simple website is a meaningful exercise that goes beyond just coding.
+  It involves planning, designing with the user in mind, solving problems, and continuously refining the product. 
+  This process not only results in a functional website but also fosters a deeper understanding of the web and enhances various 
+  skills that are applicable in more complex projects.
+
+
+ 
+ 
+-->   
+<html>
+
+
+
+
+<head>
+	
+	<h1 class="name-header">About Ethan Reeves</h1>
+	<style>
+
+  body {
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    color: #000; /* Make sure text color contrasts with the background */
+  }
+
+ 
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  body {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif; /* Readable font choice */
+  font-size: 12px; /* Font size set to 12px */
+  margin: 15px; /* Default margin for body */
+}
+
+p {
+  margin-bottom: 9px; /* Vertical spacing between paragraphs, 75% of the font size */
+  text-indent: 20px; /* First-line indent for paragraphs */
+}
+
+
+.name-header {
+  font-family: 'Georgia', serif; /* Special serif font for distinction */
+  font-size: 30px; /* Extra-large font size (30px, which is equivalent to 30pt) */
+  text-align: center; /* Center the name */
+  text-decoration: underline; /* Underline the name */
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: white; /* White font color to contrast the gradient */
+  padding: 20px; /* Add padding to create space around the name */
+  margin-bottom: 20px; /* Add space below the name */
+  border-radius: 10px; /* Slightly round the edges of the background */
+}
+
+
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portrait {
+    float: right;
+    margin: 0 0 10px 20px;
+    padding: 5px;
+    border: 3px solid #f0f0f0; /* Change color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    border-radius: 8px; /* Rounds the corners */
+    width: 200px; /* Adjust size as needed */
+}
+
+
+h2 {
+    font-size: 2em; /* 200% of base font size */
+    color: #444;
+}
+
+h3 {
+    font-size: 1.75em; /* 175% of base font size */
+    color: #555;
+}
+
+
+
+/* Table Styling */
+.class-schedule {
+    width: 80%; /* Adjust width between 600px-900px as needed */
+    max-width: 900px;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #333; /* Border around the entire table */
+    background-image: url('background-image.jpg'); /* Optional: Add a background graphic */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header Styling */
+.class-schedule th {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #333;
+}
+
+/* Equal Column Widths */
+.class-schedule th, .class-schedule td {
+    width: 20%; /* Since there are 5 days + Time column */
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc; /* Light border for cells */
+}
+
+/* Remove border spacing */
+.class-schedule {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Background Colors for Each Class */
+.Work {
+    background-color: #ffebcd; /* Blanched Almond */
+    border: 1px solid #e0cda9;
+}
+
+.move {
+    background-color: #e6ffe6; /* Light Green */
+    border: 1px solid #a9e0a9;
+}
+
+.Data {
+    background-color: #cce5ff; /* Light Blue */
+    border: 1px solid #a9c9e0;
+	
+
+
+
+/* Time Column Styling */
+.class-schedule td:first-child {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Adding Lines for Each 30-Minute Mark */
+.class-schedule tr:not(:last-child) td {
+    border-bottom: 1px solid #ccc; /* Light lines */
+}
+
+/* Padding Adjustments */
+.class-schedule td, .class-schedule th {
+    padding: 15px;
+}
+	
+	</style>
+
+</head>
+
+<body>
+
+<div class="content">
+	<img src="aboutme.png" alt="Photo of me" style="float: right; width="500" height="500">
+
+</div>
+	<main>
+
+		<header>
+			<h2>Personal Info</h2>
+		</header>
+		<hr>
+		<h2>Personal Info:</h2>
+		<ul>
+		  <li><strong>Major:</strong> Information Systems</li>
+		  <li><strong>High School:</strong> Hazelwick Secondary School, Class of 2013</li>
+		  <li><strong>Year at UVU:</strong> Junior</li>
+		  <li><strong>Favorite Ice Cream:</strong>Strawberry</li>
+		</ul>
+		
+		<h2>My Five Favorite Books</h2>
+		<ol>
+		  <li><em>The Great Gatsby</em> by <a href="https://www.fscottfitzgerald.com" target="_blank">F. Scott Fitzgerald</a></li>
+		  <li><em>To Kill a Mockingbird</em> by <a href="https://www.harperlee.com" target="_blank">Harper Lee</a></li>
+		  <li><em>1984</em> by <a href="https://www.george-orwell.org" target="_blank">George Orwell</a></li>
+		  <li><em>Harry Potter and the Sorcerer’s Stone</em> by <a href="https://www.jkrowling.com" target="_blank">J.K. Rowling</a></li>
+		  <li><em>The Lord of the Rings: The Fellowship of the Ring</em> by <a href="https://www.tolkien.co.uk" target="_blank">J.R.R. Tolkien</a></li>
+		</ol>
+
+		<h2>Whispers of the Wind</h2>
+		<div style="text-align: center;">
+			<p>
+			  Soft winds gently sway,<br>
+			  Leaves whisper secrets of peace,<br>
+			  Natures quiet song.
+			</p>
+		  </div>
+
+<h2>My Personal Interests</h2>
+
+<p>
+  One of my greatest passions is technology, particularly in the realm of web development.
+   I love the challenge of bringing ideas to life through code and creating functional, aesthetically pleasing websites.
+    The constant evolution of technology keeps me motivated to learn new programming languages and frameworks.
+</p>
+
+<p>
+  In addition to technology, I have a deep appreciation for literature. 
+  I enjoy reading a wide range of genres, from classic novels to modern-day thrillers. 
+  Books provide a unique escape, allowing me to explore different worlds and perspectives, which in turn fuels my creativity.
+</p>
+
+<p>
+  I also have a strong interest in outdoor activities, especially hiking and photography. 
+  Being in nature not only offers a sense of peace but also presents endless opportunities to capture beautiful landscapes. 
+  This hobby allows me to combine my love for adventure with my passion for art.
+</p>
+
+	
+		
+	</main>
+
+	<h2>Class Schedule</h2>
+
+
+	<table class="class-schedule"  border="1" cellspacing="3" cellpadding="3">
+		<tr>
+            <th>Day/Period</th>
+            <th>I<br>8:30-9:45</th>
+            <th>II<br>10:00-11:15</th>
+            <th>III<br>11:30-12:45</th>
+            <th>IV<br>13:00-14:15</th>
+            <th>V<br>14:30-15:45</th>
+            <th>VI<br>16:00-17:15</th>
+            <th>VII<br>17:30-18:45</th>
+        
+        </tr>
+        <tr>
+            <td class="highlight"><b>Monday</b></td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td colspan="3">&nbsp;</td>
+			<td class="Work">Work</td>
+			
+        </tr>
+        <tr>
+            <td class="highlight"><b>Tuesday</b></td>
+            <td class="Work">Work</td>
+            <td class="web">3360</td>
+            <td class="Data">2420</td>
+			<td class="move">2550</td>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Wednesday</b></td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td colspan="3">&nbsp;</td>
+			<td class="Work">Work</td>
+			
+        </tr>
+        <tr>
+            <td class="highlight"><b>Thursday</b></td>
+            <td class="Work">Work</td>
+            <td class="web">3360</td>
+            <td class="Data">2420</td>
+			<td class="move">2550</td>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Friday</b></td>
+             <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td colspan="3">&nbsp;</td>
+			<td class="Work">Work</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Saturday</b></td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td class="Work">Work</td>
+            <td colspan="3">&nbsp;</td>
+			<td class="Work">Work</td>
+        </tr>
+    </table>
+	  
+	
+
+
+</body>
+
+</html>
